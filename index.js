@@ -219,7 +219,7 @@ const playState = {
         game.physics.arcade.overlap(player, enemies, this.lose, null, this);
              
         // Make the player jump if he is touching the ground
-        if (cursor.up.isDown) {
+        if (cursor.up.isDown || game.input.activePointer.isDown) {
           player.body.velocity.y = -250;
         }
   
