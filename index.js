@@ -39,11 +39,11 @@ const playState = {
       // Here we preload the image assets - make more here http://piskelapp.com
       game.load.crossOrigin = 'anonymous';
       //game.load.image('player', 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/1171931/player.png');
-      game.load.image('player', 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAByklEQVRYR+2WvUrEQBDHc7bpxBNE8YMggoWKYGFj4yvoo/gUPoAPoa9gY2MhHJ6FIBJEOBGMWChXR/6BCZPNzO4s5FJdmrvdnZ35zWcySJznZfe1xNbO8/bAPdPWoTvXRzfl+cOZqK+xSYrIkAUidCdfu6wcwpNNLloQ9YariHurgUh3XFl4T7qkKJgApJRowATAPde8x/7MAEKeU1Q6BYj1vhEBLHx1wNPgyk2m38GGOX0/DndBCII8lAA0A9B5u3FfmgF8EACQooQIkIHhSV4Wd1nlLf3vDECLMweQZKIBQqlwjXCAfDgss6KoIkD/ewfggKPNq2Txa7VOkQsfnPehzqAO+Fn+EDOkvQNac8DXR76ph/DibucAfJLtTfcrvqd0XP3yNcLrA/C9B1qDiIRh/PDzLRmtbNWBgVECIAisAbCejpPHdKmWde/iwPQ6Jq8lBVqKDtgUBATu0sMdMAOQcVzgabAALPz+NcR6AYBFRMFnPCoFsREgl7XQRxUhLz5rCnjMfbUzsxrwzQ9+NgeIjoBWuZZvPYuM+C6gIsQheliitii3yKgAOOCt6BaZRblFRgTAptuKc4DeI2AdLF3JBT/JujKk6fkHY02bMJDaJV8AAAAASUVORK5CYII=');
+      game.load.image('player', players.unicorn);
       //game.load.image('wall', 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/1171931/wall.png');
-      game.load.image('wall', 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAM0lEQVRYR+3QQREAAAQAQSroH8hTI2L47CW42ayejcfSAAECBAgQIECAAAECBAgQIPAtcAZ8VUFkiJF2AAAAAElFTkSuQmCC');
-      game.load.image('coin', 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAeElEQVRYR2P8ws7+nwEJcJf+ROYyPK9gR+ErTTVC4f8P243CZ0yYisJ3PH0Dhb/67zJU9YPKAZJsbCiuowXn+a9fuENg1AGDLgQ+5X+mby5AD4FRB4yGwGgIjIbAaAiMhsBoCIyGwGgIDHgIjPYLRl4IgHw84nrHAASQdFDlc29nAAAAAElFTkSuQmCC');
-      game.load.image('enemy', 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/1171931/enemy.png');
+      game.load.image('wall', objects.wall);
+      game.load.image('coin', objects.coin);
+      game.load.image('enemy', objects.enemy);
       
       // Here we preload the audio assets - make more here http://sfbgames.com/chiptone/  
       game.load.audio('win', 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/1171931/win.wav');
