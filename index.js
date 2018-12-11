@@ -13,6 +13,7 @@ let reload;
 let cursor;
 let wallHeight = 6;
 let position = 0;
+let maxScore = null;
 
 var w = 500, h = 500;
 
@@ -75,7 +76,7 @@ const playState = {
     game.input.onDown.add(unpause, self);
 
     // And finally the method that handels the pause menu
-    function unpause(event){
+    function unpause(event) {
         // Only act if paused
         if(game.paused){
             // Calculate the corners of the menu
@@ -234,7 +235,7 @@ const playState = {
       text.text = score.toString();
       
         // restart the game dependent on score count of coin
-        if (score == 40) {
+        if (maxScore !== null && score >= maxScore) {
            this.win();
         }
     },
@@ -242,6 +243,7 @@ const playState = {
       // Function to restart the game when a player touches an enemy
     lose: function() {
         splat.play();
+        alert('You died! Score is ' + score);
         game.state.start('main');
     },  
   
